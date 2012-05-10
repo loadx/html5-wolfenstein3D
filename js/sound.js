@@ -53,7 +53,8 @@ Wolf.Sound = (function() {
                 }
             }
         }
-        return "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/" + file.split(".")[0] + "." + ext
+        
+        return file.split(".")[0] + "." + ext
     }
 
     function createAudioElement() {

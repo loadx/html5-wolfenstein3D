@@ -656,8 +656,8 @@ Wolf.Game = (function() {
     function preloadLevelAssets(level, callback) {
         var files = [],
             tx, ty, texture, x, y, f, i, numFiles,
-            texturePath = "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/art/walls-shaded/" + Wolf.TEXTURERESOLUTION + "/",
-            spritePath = "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/art/sprites/" + Wolf.TEXTURERESOLUTION + "/";
+            texturePath = "art/walls-shaded/" + Wolf.TEXTURERESOLUTION + "/",
+            spritePath = "art/sprites/" + Wolf.TEXTURERESOLUTION + "/";
 
         function addTexture(texture) {
             if (texture > 0) {

@@ -16,8 +16,8 @@ Wolf.Renderer = (function() {
     
     var slices = [],
         useBackgroundImage = Wolf.ISWEBKIT,
-        texturePath = "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/art/walls-shaded/" + Wolf.TEXTURERESOLUTION + "/",
-        spritePath = "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/art/sprites/" + Wolf.TEXTURERESOLUTION + "/",
+        texturePath = "art/walls-shaded/" + Wolf.TEXTURERESOLUTION + "/",
+        spritePath = "art/sprites/" + Wolf.TEXTURERESOLUTION + "/",
         sprites = [],
         maxDistZ = 64 * 0x10000,
         hasInit = false;
@@ -188,7 +188,7 @@ Wolf.Renderer = (function() {
             itop = (proc.texture % 2) ? 0 : -height;
         } else {
             itop = -(proc.texture-1) * height;
-            textureSrc = "http://zmi-cdnstatic.s3.amazonaws.com/wolfenstein.bethsoft.com/art/walls-shaded/64/walls.png";
+            textureSrc = "art/walls-shaded/64/walls.png";
         }
        
         if (image._src != textureSrc) {
