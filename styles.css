@@ -655,6 +655,13 @@ body {
     background-position : -384px -384px;
 }
 
+#menu div.menu.episodes ul {
+	height:230px;
+	width:570px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
 #menu div.menu.episodes li div.button {
     height : 56px;
     width : 550px;
@@ -681,6 +688,28 @@ body {
 #menu div.menu.episodes li.active.episode-2 div.button {
     background-position : 0 -280px;
 }
+
+#menu div.menu.episodes li.episode-3 div.button {
+    background-position : 0 -336px;
+}
+#menu div.menu.episodes li.active.episode-3 div.button {
+    background-position : 0 -392px;
+}
+
+#menu div.menu.episodes li.episode-4 div.button {
+    background-position : 0 -448px;
+}
+#menu div.menu.episodes li.active.episode-4 div.button {
+    background-position : 0 -504px;
+}
+
+#menu div.menu.episodes li.episode-5 div.button {
+    background-position : 0 -560px;
+}
+#menu div.menu.episodes li.active.episode-5 div.button {
+    background-position : 0 -616px;
+}
+
 
 
 
