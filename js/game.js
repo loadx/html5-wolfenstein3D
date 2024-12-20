@@ -481,7 +481,8 @@ Wolf.Game = (function() {
             player.faceGotGun = player.faceOuch = false;
             player.faceFrame = Wolf.Random.rnd() >> 6;
             if( player.faceFrame == 3) {
-                player.faceFrame = 0;
+                // DenisBelmondo@github: mugshot-fix
+                player.faceFrame = 1;
             }
             player.faceCount = 0;
         }
@@ -497,7 +498,9 @@ Wolf.Game = (function() {
                 if (h < 0) {
                     h = 0;
                 }
-                pic = (3*((100-h)/16)>>0) + player.faceFrame;
+                
+                // DenisBelmondo@github: mugshot-fix
+                pic = (3*(((100-h)/16)|0)|0) + player.faceFrame;
                 
                 //gsh
                 if ((player.flags & Wolf.FL_GODMODE)) {
